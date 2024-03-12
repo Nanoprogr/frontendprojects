@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(90deg, rgba(0,139,137,1) 0%, rgba(64,224,208,1) 50%, rgba(124,252,0,1) 100%);
+   
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35vh;
+    
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 7px;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+li>a {
+    color: black;
+    background: linear-gradient(90deg, rgba(0,139,137,1) 0%, rgba(64,224,208,1) 50%, rgba(124,252,0,1) 100%);
+    text-decoration: none;
+    visibility: hidden;
+}
+
+img {
+    width: 100px;
+    height: auto;
+    
+}
+
+img:hover + a {
+    transform: translateY(-10px);
+    visibility: visible;    
+}
+img:hover {
+    transform: translateY(-10px);   
+}
+
